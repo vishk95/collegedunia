@@ -1,0 +1,22 @@
+{
+  "name": "collegedunia",
+  "version": "1.0.0",
+  "description": "test app",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishk95/collegedunia.git"
+  },
+  "author": "vishal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishk95/collegedunia/issues"
+  },
+  "homepage": "https://github.com/vishk95/collegedunia#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
