@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: din,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#root{
+    margin: 3.4vw auto 4vw 3vw;
+}
+#container{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    min-width: 639px;
+    width: 45vw;
+    height: 377px;
+    margin-bottom: 50px;
+    padding: 0 0 10px;
+    box-shadow: 0 0 19px 0 rgba(68, 68, 68, 0.1);
+    border: solid 0.2px #dbdbdb;
+    background-color: #ffffff;
+    border-radius: 3.8px;
+    z-index: 0;
+    position: relative;
+}
+
+.top-block{
+    width: 100%;
+    height: 60%;
+    background-color:brown;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.banner{
+    z-index: 0;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.banner-overlay{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.7);
+    position: absolute; 
+    z-index: 1;
+}
+
+.promo{
+    width: 120px;
+    height: 33px;
+    background-color: #68a7ff;
+    color: #ffffff;
+    margin: -16px 0 0 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: normal;
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+}
+
+.topright {
+    width: 0;
+    height: 0;
+    border-top: 33px solid #68a7ff;
+    border-left: 33px solid transparent;
+    margin: 0 0 0 -33px;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
+.bottomright {
+    width: 0;
+    height: 0;
+    border-bottom: 33px solid #68a7ff;
+    border-left: 33px solid transparent;
+    margin: 0 0 0 -33px;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
+
+.rating-block{
+    background: #f5a626;
+    width:75px;
+    height:53px;
+    top: 0;
+    right: 0;
+    position: absolute; 
+    z-index: 2;
+    padding: 9px;
+    border-radius: 3.8px;
+    margin: 28px 13px auto auto;
+}
