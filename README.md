@@ -1,3 +1,3 @@
 college list
 
-visit [https://vishk95.github.io/collegedunia/]here
+visit [here](https://vishk95.github.io/collegedunia/)
