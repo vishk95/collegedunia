@@ -1,17 +1,24 @@
+@font-face {
+    font-family: 'D-DIN';
+    src: url('./src/D-DIN.otf');
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: din,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: D-DIN, din,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 #root{
-    margin: 3.4vw auto 4vw 3vw;
+    padding: 30px 0 30px 30px;
 }
 #container{
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .card {
@@ -30,12 +37,13 @@ body {
 
 .top-block{
     width: 100%;
-    height: 60%;
-    background-color:brown;
+    height: 233.2px;
     overflow: hidden;
     position: absolute;
     top: 0;
     z-index: 0;
+    border-top-left-radius: 3.8px;
+    border-top-right-radius: 3.8px;
 }
 
 .banner{
@@ -60,6 +68,7 @@ body {
     background-color: #68a7ff;
     color: #ffffff;
     margin: -16px 0 0 0;
+    padding-right: 10px;
     font-size: 15px;
     font-weight: 500;
     line-height: 33px;
@@ -78,7 +87,7 @@ body {
     margin: 0 0 0 -33px;
     position: absolute;
     z-index: 2;
-    left: 0;
+    left: 1px;
     top: 0;
 }
 
@@ -90,20 +99,276 @@ body {
     margin: 0 0 0 -33px;
     position: absolute;
     z-index: 2;
-    left: 0;
+    left: 1px;
     top: 0;
 }
 
 
 .rating-block{
     background: #f5a626;
-    width:75px;
-    height:53px;
+    width:57px;
+    height:35px;
     top: 0;
     right: 0;
     position: absolute; 
     z-index: 2;
-    padding: 9px;
+    padding: 8px;
     border-radius: 3.8px;
     margin: 28px 13px auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    
+}
+
+.outfive{
+    width:50%;
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 18px;
+    top: 10px;
+    right: 0;
+    position: absolute;
+    color: #ffffff;
+}
+
+.rating{
+    width: 50%;
+    font-size: 18.5px;
+    font-weight: bold;
+    line-height: 18px;
+    text-align: right;
+    color: #ffffff;
+    left: 0;
+    position: absolute;
+}
+.rating-remark{
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    bottom: 10px;
+    position: absolute;
+}
+
+.top-end{
+    width: 100%;
+    height: 34px;
+    bottom: 10.8px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tags{
+    display: flex;
+    margin-left: 10px;
+}
+
+.pill{
+    width: fit-content;
+    height: 34px;
+    background:#ffffff;
+    border-radius: 34px/34px;
+    margin: 0 4px;
+    padding: 0 14px;
+    font-size: 13.5px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 34px;
+}
+
+.ranking{
+    line-height: 34px;
+    font-size: 13.5px;
+    font-weight: 500;
+    letter-spacing: normal;
+    color: #ffffff;
+    padding-right: 14px;
+}
+
+.bottom-block{
+    width: 100%;
+    height: 143.8px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    padding: 8px 27px 21px 17px;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+.name{
+    width: fit-content;
+    font-size: 18.5px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.97;
+    letter-spacing: normal;
+    text-align: left;
+    color: #444444;
+    display: flex;
+}
+
+.stars{
+    font-size: 14px;
+    margin-left: 14px;
+    line-height: 14px;
+
+}
+
+.rate{
+    font-size: 11px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 14px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #444444;
+    position: absolute;
+    right: 67px;
+    top: 5px;
+    text-decoration: line-through;
+}
+
+.discount{
+    width: 29px;
+    height: 14px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    z-index: 2;
+    background-color: #dd1c26;
+    color: #ffffff;
+    position: absolute;
+    right: 27px;
+    top: 5px;
+    border-radius: 1px;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 7px solid #dd1c26;
+    border-bottom: 7px solid transparent;
+    z-index: 3;
+    position: absolute;
+    right: 28px;
+    top: 0;
+  }
+
+  .nearest{
+    width: fit-content;
+    margin: 10px 0;
+    font-size: 13.5px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #444444;
+    display: flex;
+  }
+
+  .nearest-nxt{
+    margin-left: 5px;
+    font-size: 13.5px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #adadad;
+}
+
+.famous{
+    font-size: 13.5px;
+    font-weight: 500;
+    margin-top: 17px;
+    color: #adadad;
+    display: flex;
+}
+
+.match{
+    font-size: 13.5px;
+    font-weight: 500;
+    margin-right: 5px;
+    color: #37b396;
+}
+
+.offer{
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.offer-pill{
+    height: 35px;
+    width: fit-content;
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 35px;
+    background:#ccf5e7;
+    border-radius: 35px/35px;
+    padding: 0 14px 0 35px;
+    position: absolute;
+    left: -17px;
+}
+
+.amenties{
+    height: 35px;
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 35px;
+    display: flex;
+    justify-content: flex-end;
+    color: #37b396;
+}
+
+.dot{
+    width: 4px;
+    height: 4px;
+    background: #37b396;
+    margin: 16px 7px;
+    border-radius: 4px / 4px;
+}
+
+.fee{
+    font-size: 28.5px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.89;
+    letter-spacing: normal;
+    color: #dd1c26;
+    position: absolute;
+    right: 27px;
+    top: 30px;
+}
+
+.cycle{
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #444444;
+    position: absolute;
+    right: 27px;
+    top: 58.5px
 }
