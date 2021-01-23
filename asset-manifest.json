@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/collegedunia/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/collegedunia/static/js/main.49d7b782.chunk.js",
+    "main.js.map": "/collegedunia/static/js/main.49d7b782.chunk.js.map",
+    "runtime-main.js": "/collegedunia/static/js/runtime-main.bc7c33a7.js",
+    "runtime-main.js.map": "/collegedunia/static/js/runtime-main.bc7c33a7.js.map",
+    "static/js/2.3cd96231.chunk.js": "/collegedunia/static/js/2.3cd96231.chunk.js",
+    "static/js/2.3cd96231.chunk.js.map": "/collegedunia/static/js/2.3cd96231.chunk.js.map",
+    "static/js/3.8e324523.chunk.js": "/collegedunia/static/js/3.8e324523.chunk.js",
+    "static/js/3.8e324523.chunk.js.map": "/collegedunia/static/js/3.8e324523.chunk.js.map",
+    "index.html": "/collegedunia/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/collegedunia/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.3cd96231.chunk.js.LICENSE.txt": "/collegedunia/static/js/2.3cd96231.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc7c33a7.js",
+    "static/js/2.3cd96231.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.49d7b782.chunk.js"
+  ]
+}
